@@ -116,36 +116,7 @@ const About = () => {
     })
   };
 
-  // Circular progress component
-  const CircularProgress = ({ percentage,  colorClass }) => {
-    const radius = 36;
-    const circumference = 2 * Math.PI * radius;
-    const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
-    return (
-      <div className="circular-progress">
-        <svg width="80" height="80" className="progress-ring">
-          <circle
-            className="progress-background"
-            cx="40"
-            cy="40"
-            r={radius}
-          />
-          <motion.circle
-            className={`progress-bar ${colorClass}`}
-            cx="40"
-            cy="40"
-            r={radius}
-            strokeDasharray={circumference}
-            initial={{ strokeDashoffset: circumference }}
-            animate={{ strokeDashoffset }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-          />
-        </svg>
-        <div className="progress-text">{percentage}%</div>
-      </div>
-    );
-  };
 
   return (
     <section id="about" className="about-section">
