@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { ExternalLink, Github, Eye, Code, Star, Globe } from 'lucide-react';
+import { Github, Eye, Code, Star, Globe } from 'lucide-react';
 import { projects } from '../constants';
 import './Projects.scss';
 

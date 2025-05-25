@@ -117,7 +117,7 @@ const About = () => {
   };
 
   // Circular progress component
-  const CircularProgress = ({ percentage, skill, colorClass }) => {
+  const CircularProgress = ({ percentage,  colorClass }) => {
     const radius = 36;
     const circumference = 2 * Math.PI * radius;
     const strokeDashoffset = circumference - (percentage / 100) * circumference;
