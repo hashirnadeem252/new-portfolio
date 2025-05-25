@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import Button from '../components/Button';
 import './Home.scss';
 
 const Home = () => {
